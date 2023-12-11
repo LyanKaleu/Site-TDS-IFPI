@@ -10,6 +10,8 @@
     <link rel="icon" href="IMAGES/logo-cubo mágico.jpg">
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
         body {
             font-family: Arial, Helvetica, sans-serif;
             background-color: black;
@@ -31,13 +33,33 @@
 
         h2 {
             margin-top: 1.5em;
+        }   
+
+        .SUNE {
+            font-family: 'Bungee', sans-serif;
+            font-style: italic;
+            color: #6ec1e4;
+            font-size: 2rem;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .texto-meio {
+            grid-column: 2;
+            text-align: justify;
         }
 
     </style>
 </head>
 
-<body>
+<body link="#FF0000" vlink="#FF0000" alink="#FF0000">
     <h1>Desvendando o Cubo Mágico: O Labirinto da Imaginação e Estratégia</h1>
+    <hr color="">
     <div id="centralize">
 
         <header>
@@ -71,7 +93,7 @@
         <video controls src="VIDEOS/Fastest Rubik's cube 3x3 WR (3.13) sec WORLD RECORD - Trim.mp4"></video>
         <figcaption>Max Park, de 21 anos, bateu recorde mundial ao resolver um cubo mágico em apenas 3,13 segundos no dia 11 de junho de 2023.</figcaption>
     </figure>
-
+    <hr color="">
     <h1>COMO RESOLVER O CUBO MÁGICO MÉTODO BÁSICO - CAMADAS</h1>
 
     <h2>Introdução</h2>
@@ -101,7 +123,7 @@
         <figcaption>No cubo mágico usamos as seguintes notações para representar os movimentos:</figcaption>
         <img src="IMAGES/notação.jpg" width="250" height="250">
     </figure>
-
+    <hr color="">
     <h2>Passo 1 - Cruz Branca</h2>
     <object data="https://www.youtube.com/embed/mqZtAKhrA2Y" width="800" height="600"></object>
     <p>O primeiro passo para se resolver o cubo mágico é fazer uma cruz em uma das faces, no caso faremos na cor branca, você pode fazer em qualquer cor, mas recomendamos que também comece pelo branco, para que fique mais fácil de entender com as mesmas cores. Se quiser seguir com outra cor, só adaptar para o padrão de cores mostrado na introdução.</p>
@@ -164,7 +186,7 @@
             </figure>
         </li>
     </ul>
-
+    <hr color="">
     <h2>Passo 2 - Primeira Camada</h2>
     <object data="http://www.youtube.com/embed/lQiKZ7FPjXY" width="800" height="600"></object>
     <p>No segundo passo vamos completar toda a face branca, como já fizemos a cruz branca, agora colocaremos os cantos brancos (peça de 3 cores)</p>
@@ -226,7 +248,7 @@
 
         <li><b>Continuação:</b>Repita os passos até concluir a face branca.</li>
     </ul>
-
+    <hr color="">
     <h2>Passo 3 - Segunda Camada</h2>
     <object data="http://www.youtube.com/embed/y7hQIUPosIQ" width="800" height="600"></object>
     <p>No terceiro passo vamos completar a segunda camada do cubo.</p>
@@ -282,25 +304,240 @@
             Exemplo, se a peça errada estiver do lado direito você aplica a fórmula da direta e se estiver do lado esquerdo a fórmula da esquerda. 
             Depois de aplicar o algoritmo a peça sairá desse espaço e irá para a camada de cima, então só encaixar ela da forma correta fazendo o que já foi mostrando anteriormente.</figcaption>
     </figure>
-
+    <hr color="">
 
     <h2>Passo 4 - Cruz Amarela</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolorem quasi nam, deleniti consequuntur doloribus officiis iure repudiandae, pariatur distinctio placeat unde, nostrum tempore. Voluptate, enim. Aperiam cum dolorum voluptates.</p>
+    <object data="http://www.youtube.com/embed/rb0YdO7ZQ7s" width="800" height="600" type=""></object>
+    <p>No quarto passo vamos fazer na camada de cima, a cruz amarela (pois começamos a montar pela cor branca, e o amarelo é a cor oposta).</p>
+    <p>Exemplo da etapa pronta:</p>
+    <img src="IMAGES/PASSO 4/etapa-pronta.webp" alt="">
+    <p>Nesse caso a formação da cruz se divide em 4 etapas diferentes, sendo a quarta a cruz montada. Vamos seguir uma única sequência para qualquer uma das etapas, a diferença será a orientação de onde se deve aplicar o algoritmo.</p>
+    <p>Quando você termina o passo 3 pode cair em qualquer uma das etapas abaixo, até mesmo já cair com a cruz pronta (o que é mais difícil, mas pode acontecer).</p>
+    <p>Lembrando que nesse passo só estamos analisando as peças de meio amarelo, se tiver cantos amarelos na camada de cima você deve ignora-los por enquanto.</p>
+
+    <ul>
+        <li>
+            <figure>
+                <img src="IMAGES/PASSO 4/caso-ponto.webp" alt="">
+                <figcaption><b>CASO "PONTO"</b></figcaption>
+                <p>Nesse caso temos apenas o centro amarelo no topo.</p>
+                <p>Pode aplicar a sequência de movimentos em qualquer lado que o resultado será o mesmo.</p>
+                <p>Após fazer a aplicação ele se transformará no <b>CASO “L”</b></p>
+            </figure>
+        </li>
+
+        <li><figure>
+            <img src="IMAGES/PASSO 4/caso-L.webp" alt="">
+            <figcaption><b>CASO "L"</b></figcaption>
+            <p>Nesse caso temos dois meios amarelos no topo, que parece formar a letra L.</p>
+            <p>Aplicar a sequência com o L invertido (uma ponta para a esquerda e outra para trás) como mostrado na figura.</p>
+            <p>Após fazer a aplicação ele te levará ao <b>CASO “LINHA RETA”</b></p>
+        </figure></li>
+
+        <li><figure>
+            <img src="IMAGES/PASSO 4/caso-linhareta.webp" alt="">
+            <figcaption><b>CASO "LINHA RETA"</b></figcaption>
+            <p>Nesse caso temos novamente dois meios amarelos no topo, mas dessa vez em linha reta.</p>
+            <p>Aplicar a sequência com a linha na horizontal (uma ponta na esquerda e outra na direita) como mostrado na figura.</p>
+            <p>Após fazer a aplicação ele te levará ao <b>CASO “CRUZ”</b></p>
+        </figure></li>
+
+        <li><figure>
+            <img src="IMAGES/PASSO 4/caso-cruz.webp" alt="">
+            <figcaption><b>CASO "CRUZ"</b></figcaption>
+            <p>Se seu cubo está assim o passo 4 foi concluído, pode seguir para o passo 5.</p>
+        </figure></li>
+    </ul>
+
+    <p><b>ATENÇÃO: Nesse passo não tem como ficar 1 ou 3 meios amarelos na camada de cima, se seu cubo estiver assim é porque tem alguma coisa errada nele, verifique se completou o passo 3 corretamente, se sim então veja a página <a href="https://www.cubomagicobrasil.com/tutoriais/casos-impossiveis/" style="text-decoration: none;">CASOS IMPOSSÍVEIS</a> para descobrir como resolver.</b></p>
+    <p>Agora identifique qual caso você está e aplique a sequência de movimentos abaixo, nesse exemplo fizemos no CASO “LINHA RETA” que já completa a cruz.</p>
+
+    <img src="IMAGES/PASSO 4/passo1.webp" alt="">
+    <img src="IMAGES/PASSO 4/passo2.webp" alt="">
+    <img src="IMAGES/PASSO 4/passo3.webp" alt="">
+    <img src="IMAGES/PASSO 4/passo4.webp" alt="">
+    <img src="IMAGES/PASSO 4/passo5.webp" alt="">
+    <img src="IMAGES/PASSO 4/passo6.webp" alt="">
+    <img src="IMAGES/PASSO 4/passo7.webp" alt="">
+    <img src="IMAGES/PASSO 4/passo8.webp" alt="">
+    <p>Em notação: F R U R' U' F'</p>
+    <hr color="">
 
     <h2>Passo 5 - Face Amarela</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolorem quasi nam, deleniti consequuntur doloribus officiis iure repudiandae, pariatur distinctio placeat unde, nostrum tempore. Voluptate, enim. Aperiam cum dolorum voluptates.</p>
+    <object data="http://www.youtube.com/embed/v2LfWfjCiqk" type="" width="800" height="600"></object>
+    <p>Nesse passo vamos orientar todos os cantos amarelos finalizando a face amarela.</p>
+    <p>Exemplo da etapa concluída:</p>
+    <img src="IMAGES/PASSO 5/etapa-pronta.webp" alt="">
+    <p>Nesse passo existem 7 formas diferentes (que dividiremos em 3 partes) de como pode ficar o topo amarelo, mas usaremos apenas uma fórmula para qualquer um dos casos, a diferença será a quantidade de vezes e a orientação que vamos aplicar, como fizemos no passo anterior. Como foi falado no último passo, aqui também existe a chance (bem baixa) de você chegar na etapa e ela já estar concluída, se isso acontecer é só seguir para o próximo passo (A mesma coisa pode acontecer nos passos seguintes).</p>
+    <p>Abaixo vou mostrar todas as formas, mas antes vou dar uma explicação para que fique mais fácil de entender. Nós vamos olhar quantas quinas amarelas já estão na viradas para cima, podem ser zero, 1 ou 2 peças (nunca com 3, caso tenha essa quantidade veja se todas as outras camadas estão corretas, se sim, veja a página de <a href="https://www.cubomagicobrasil.com/tutoriais/casos-impossiveis/" style="text-decoration: none;">casos impossíveis</a> para resolver). A forma ideal para completar a face amarela é quando só tem 1 quina amarela virada para cima. Quando se tem zero ou 2, fazemos a sequência para transformá-la em 1. Em qualquer um dos casos vamos aplicar a mesma sequência de movimentos, só mudará a orientação.</p>
+    <p>Para seguir a orientação vamos sempre nós basear na peça superior esquerda/frente/topo (mostrado nas imagens abaixo). Só ir girando a camada de cima até encontrar a posição informada.</p>
+    <p>Vamos aplicar uma sequência de movimentos que chamamos no mundo do cubo mágico de <i>“Sune“</i></p>
+
+    <figure>
+        <figcaption><b>Quando tivermos “zero” cantos amarelos na face de cima deixaremos uma peça de canto com amarelo no local indicado apontado para a esquerda. Aplicamos o Sune</b></figcaption>
+        <img src="IMAGES/PASSO 5/caso1.1.webp" alt="">
+        <img src="IMAGES/PASSO 5/caso1.2.webp" alt="">
+        <figure>
+            <img src="IMAGES/PASSO 5/caso1.3.webp" alt="">
+            <figcaption>Visão do lado esquerdo para os dois exemplos acima.</figcaption>
+        </figure>
+    </figure>
+
+    <figure>
+        <figcaption><b>Quanto tivermos dois cantos amarelos na face de cima deixaremos uma peça de canto no local indicado com amarelo virado para frente. Aplicamos o Sune</b></figcaption>
+        <img src="IMAGES/PASSO 5/caso2.1.webp" alt="">
+        <img src="IMAGES/PASSO 5/caso2.2.webp" alt="">
+        <img src="IMAGES/PASSO 5/caso2.3.webp" alt="">
+    </figure>
+
+    <figure>
+        <figcaption><b>Quanto tivermos apenas um canto amarelo na face de cima deixaremos essa peça no local indicado. Aplicamos o Sune</b></figcaption>
+        <figure>
+            <img src="IMAGES/PASSO 5/caso3.1.webp" alt="">
+            <figcaption>Pode acontecer nessa etapa de você fazer o algoritmo duas vezes, isso acontecerá quando na etapa anterior tiver 2 cantos em cima. Daí só repetir o <i>Sune</i>.</figcaption>
+        </figure>
+        <figure>
+            <img src="IMAGES/PASSO 5/caso3.2.webp" alt="">
+            <figcaption>Após aplicar o <i>Sune</i> a face amarela estará completa.</figcaption>
+        </figure>
+    </figure>
+
+    <h2 class="SUNE">SUNE</h2>
+    <img src="IMAGES/PASSO 5/sune1.webp" alt="">
+    <img src="IMAGES/PASSO 5/sune2.webp" alt="">
+    <img src="IMAGES/PASSO 5/sune3.webp" alt="">
+    <img src="IMAGES/PASSO 5/sune4.webp" alt="">
+    <img src="IMAGES/PASSO 5/sune5.webp" alt="">
+    <img src="IMAGES/PASSO 5/sune6.webp" alt="">
+    <img src="IMAGES/PASSO 5/sune7.webp" alt="">
+    <img src="IMAGES/PASSO 5/sune8.webp" alt="">
+    <img src="IMAGES/PASSO 5/sune9.webp" alt="">
+    <p>Em notação: R U R' U R U2(U+U ou U'+U') R'</p>
+    <hr color="">
 
     <h2>Passo 6 - Permutação dos Cantos</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolorem quasi nam, deleniti consequuntur doloribus officiis iure repudiandae, pariatur distinctio placeat unde, nostrum tempore. Voluptate, enim. Aperiam cum dolorum voluptates.</p>
+    <object data="http://www.youtube.com/embed/y1p3sIJaSmw" type="" width="800" height="600"></object>
+    <p>Nessa etapa vamos permutar os 4 cantos da última camada.</p>
+    <p>Exemplo da etapa concluída:</p>
+    <img src="IMAGES/PASSO 6/etapa-pronta.webp" alt="">
+
+    <div class="container">
+        <img src="IMAGES/PASSO 6/par1.webp" alt="">
+        <div class="texto-meio">
+            Vamos procurar na camada de cima uma face com um par da mesma cor. No nosso exemplo encontramos um par vermelho. Deixaremos esse par virado para frente e assim aplicaremos a fórmula que vou mostrar abaixo. Não é obrigatório deixar o par junto com a face de mesma cor, como na imagem da direita, mas ajuda a se orientar com mais facilidade.
+        </div>
+        <img src="IMAGES/PASSO 6/par2.webp" alt="">
+    </div>
+
+    <figure>
+        <img src="IMAGES/PASSO 6/sem-par.webp" alt="">
+        <figcaption><b>Se você não encontrar nenhuma par de cantos pode aplicar a mesma sequência de movimentos que com certeza o par irá aparecer depois.</b></figcaption>
+    </figure>
+
+    <p><b>DICA: Essa é a sequência de movimentos mais longa que vamos aprender, então preste bastante atenção em todos os movimentos, principalmente nos movimentos B e B’ e nos movimentos duplos, onde é fácil de confundir a orientação correta.</b></p>
+    <img src="IMAGES/PASSO 6/passo1.webp" alt="">
+    <img src="IMAGES/PASSO 6/passo2.webp" alt="">
+    <img src="IMAGES/PASSO 6/passo3.webp" alt="">
+    <img src="IMAGES/PASSO 6/passo4.webp" alt="">
+    <img src="IMAGES/PASSO 6/passo5.webp" alt="">
+    <img src="IMAGES/PASSO 6/passo6.webp" alt="">
+    <img src="IMAGES/PASSO 6/passo7.webp" alt="">
+    <img src="IMAGES/PASSO 6/passo8.webp" alt="">
+    <img src="IMAGES/PASSO 6/passo9.webp" alt="">
+    <img src="IMAGES/PASSO 6/passo10.webp" alt="">
+    <img src="IMAGES/PASSO 6/passo11.webp" alt="">
+    <p><b>Por fim você alinha a última camada com as faces correspondentes fazendo U, U' ou U2.</b></p>
+    <p>Em notação: R B' R F2 (F+F ou F'+F') R' B R F2 R2 (R+R OU R' + R')</p>
+    <hr color="">
 
     <h2>Passo 7 - Permutação dos Meios</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolorem quasi nam, deleniti consequuntur doloribus officiis iure repudiandae, pariatur distinctio placeat unde, nostrum tempore. Voluptate, enim. Aperiam cum dolorum voluptates.</p>
+    <object data="http://www.youtube.com/embed/Mm_6HCYUBrk" width="800" height="600"></object>
+    <p>Nessa etapa vamos permutar os meios restantes da última camada, completando o cubo mágico.</p>
+    <img src="IMAGES/PASSO 7/completo.webp" alt="">
+    <p>A primeira coisa que faremos nesse passo e encontrar uma face que esteja completa, para podermos aplicar a fórmula. As outras faces vão estar com os meios incorretos. Pode acontecer de não ter nenhuma face completa, nessa caso você aplica qualquer uma das fórmulas mostradas abaixo que com certeza uma face ficará correta.</p>
+    <p>Se no seu cubo tiver duas camadas corretas e dois meios errados olhe a página de <a href="https://www.cubomagicobrasil.com/tutoriais/casos-impossiveis/" style="text-decoration: none;">casos impossíveis</a>.</p>
+    
+    <figure>
+        <img src="IMAGES/PASSO 7/preparo1.webp" alt="">
+        <img src="IMAGES/PASSO 7/preparo2.webp" alt="">
+        <figcaption>A primeira coisa que faremos é procurar por uma camada que esteja completa, nesse exemplo encontrei a camada verde. Após encontra-lá à deixaremos virada para trás e assim aplicamos a fórmula. Nesse caso a face azul ficou para minha frente, a barra verde representa a cor que ficou para trás. Lembrando que esse é apenas um exemplo.</figcaption>
+    </figure>
+
+    <p><b>DICA: Nessa etapa vamos fazer um movimento totalmente novo, onde mexeremos a camada do meio, preste bastante atenção para não se confundir e bagunçar o cubo. Uma dica para mexer essa camada é segurar com os dedos as camadas laterais e com um dedo girar o meio.</b></p>
+
+    <ul>
+        <li><figure>
+            <img src="IMAGES/PASSO 7/movimentoM1.webp" alt="">
+            <figcaption><b>EXEMPLO</b></figcaption>
+        </figure></li>
+
+        <li><figure>
+            <img src="IMAGES/PASSO 7/movimentoM2.webp" alt="">
+            <figcaption><b>MOVIMENTO M</b></figcaption>
+        </figure></li>
+
+        <li><figure>
+            <img src="IMAGES/PASSO 7/MovimentoM3.webp" alt="">
+            <figcaption><b>MOVIMENTO M'</b></figcaption>
+        </figure></li>
+    </ul>
+
+    <p>Agora vamos identificar qual a orientação das peças, olhe para as peças de meio e veja para onde ela deve ir. Descobrindo a orientação aplicamos a fórmula que é conhecida no mundo do cubo mágico como <i>“minerva”</i>.</p>
+
+    <ul>
+        <li><figure>
+            <img src="IMAGES/PASSO 7/horario.webp" alt="">
+            <figcaption><b>SENTIDO HORÁRIO</b></figcaption>
+        </figure></li>
+
+        <li><figure>
+            <img src="IMAGES/PASSO 7/anti-horario.webp" alt="">
+            <figcaption><b>SENTIDO ANTI-HORÁRIO</b></figcaption>
+        </figure></li>
+    </ul>
+
+    <h2 class="SUNE">SENTIDO HORÁRIO</h2>
+    <img src="IMAGES/PASSO 7/passo-horario1.webp" alt="">
+    <img src="IMAGES/PASSO 7/passo-horario2.webp" alt="">
+    <img src="IMAGES/PASSO 7/passo-horario3.webp" alt="">
+    <img src="IMAGES/PASSO 7/passo-horario4.webp" alt="">
+    <img src="IMAGES/PASSO 7/passo-horario5.webp" alt="">
+    <img src="IMAGES/PASSO 7/passo-horario6.webp" alt="">
+    <img src="IMAGES/PASSO 7/passo-horario7.webp" alt="">
+    <img src="IMAGES/PASSO 7/passo-horario8.webp" alt="">
+    <img src="IMAGES/PASSO 7/passo-horario9.webp" alt="">
+    <p>Em notação: F2 (F+F ou F'+F') U M' U2 (U+U ou U'+U') M U F2</p>
+
+    <h2 class="SUNE">SENTIDO ANTI-HORÁRIO</h2>
+    <img src="IMAGES/PASSO 7/passo-anti-horario1.webp" alt="">
+    <img src="IMAGES/PASSO 7/passo-anti-horario2.webp" alt="">
+    <img src="IMAGES/PASSO 7/passo-anti-horario3.webp" alt="">
+    <img src="IMAGES/PASSO 7/passo-anti-horario4.webp" alt="">
+    <img src="IMAGES/PASSO 7/passo-anti-horario5.webp" alt="">
+    <img src="IMAGES/PASSO 7/passo-anti-horario6.webp" alt="">
+    <img src="IMAGES/PASSO 7/passo-anti-horario7.webp" alt="">
+    <img src="IMAGES/PASSO 7/passo-anti-horario8.webp" alt="">
+    <img src="IMAGES/PASSO 7/passo-anti-horario9.webp" alt="">
+    <p>Em notação: F2 U' M' U2 M U' F2</p>
+
+    <hr color="">
+    <img src="IMAGES/1rRk.gif" alt="">
+    <img src="IMAGES/7Gwp.gif" alt="">
+    <h2 class="SUNE">PARABÉNS!!!</h2>
+    <p><b>Você resolveu o cubo mágico! Agora é só continuar praticando, reveja todos os passos e aprenda as fórmulas para resolver sem apoio. Logo você já estará resolvendo em poucos segundos.</b></p>
+    <hr color="">
 
     </div>
     
-    
-    
-    
+    <h1>QUER COMPRAR UM CUBO MÁGICO MAS NÃO SABE QUAL?</h1>
+    <p>Com tantas opções incríveis, encontrar o cubo mágico ideal pode parecer um desafio. De velocidade a design, estou aqui para recomendar o cubo perfeito que se alinha com seu estilo e habilidades!</p>
+    <p>Vou recomendar algumas opções custo benefício:</p>
+    <p><b>3x3x3 Warrior W</b></p>
+    <a href="https://www.oncube.com.br/cubo-magico-3x3x3-qiyi-warrior-w"><img src="IMAGES/LOJA/nrJiCdW.jpg" alt=""></a>
+    <p><b>3x3x3 Sail W</b></p>
+    <a href="https://www.amazon.com.br/CUBER-Cubo-Mágico-Profissional-2x2/dp/B084C91FW6/ref=asc_df_B084C91FW6/?tag=googleshopp00-20&linkCode=df0&hvadid=411437223294&hvpos=&hvnetw=g&hvrand=1389653037264607994&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9101548&hvtargid=pla-891810055679&mcid=8a4f94d0fca43ddeb3e86dc08277625c&th=1"><img src="IMAGES/LOJA/61w7RltRUYL._AC_SL1500_.jpg" alt=""></a>
+    <p><b>MOYU-Maglev 3x3</b></p>
+    <a href="https://pt.aliexpress.com/item/1005005230540837.html?srcSns=sns_Copy&spreadType=socialShare&bizType=ProductDetail&social_params=21283314692&aff_fcid=433a5cbe3d154b359a8594b54196156b-1702317095549-00508-_mM3lvjw&tt=MG&aff_fsk=_mM3lvjw&aff_platform=default&sk=_mM3lvjw&aff_trace_key=433a5cbe3d154b359a8594b54196156b-1702317095549-00508-_mM3lvjw&shareId=21283314692&businessType=ProductDetail&platform=AE&terminal_id=0d13c6bf693444c4888cbed97eca0944&afSmartRedirect=y"><img src="IMAGES/LOJA/MOYU-Maglev-Magnetic-Magic-Cubo-de-Velocidade-Stickerless-Profissional-RS3-M-RS3-M-3X3-Presentes-Infantis.jpg_80x80.jpg_.webp" alt=""></a>
 
 </body>
 </html>
