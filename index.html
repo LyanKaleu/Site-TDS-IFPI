@@ -60,6 +60,7 @@
 <body link="#FF0000" vlink="#FF0000" alink="#FF0000">
     <h1>Desvendando o Cubo Mágico: O Labirinto da Imaginação e Estratégia</h1>
     <hr color="">
+    <button onclick="toggleAudio()">ATIVAR/DESATIVAR MÚSICA DE FUNDO</button>
     <div id="centralize">
 
         <header>
@@ -556,6 +557,18 @@
     <a href="https://www.amazon.com.br/CUBER-Cubo-Mágico-Profissional-2x2/dp/B084C91FW6/ref=asc_df_B084C91FW6/?tag=googleshopp00-20&linkCode=df0&hvadid=411437223294&hvpos=&hvnetw=g&hvrand=1389653037264607994&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9101548&hvtargid=pla-891810055679&mcid=8a4f94d0fca43ddeb3e86dc08277625c&th=1"><img src="IMAGES/LOJA/61w7RltRUYL._AC_SL1500_.jpg" alt=""></a>
     <p><b>MOYU-Maglev 3x3</b></p>
     <a href="https://pt.aliexpress.com/item/1005005230540837.html?srcSns=sns_Copy&spreadType=socialShare&bizType=ProductDetail&social_params=21283314692&aff_fcid=433a5cbe3d154b359a8594b54196156b-1702317095549-00508-_mM3lvjw&tt=MG&aff_fsk=_mM3lvjw&aff_platform=default&sk=_mM3lvjw&aff_trace_key=433a5cbe3d154b359a8594b54196156b-1702317095549-00508-_mM3lvjw&shareId=21283314692&businessType=ProductDetail&platform=AE&terminal_id=0d13c6bf693444c4888cbed97eca0944&afSmartRedirect=y"><img src="IMAGES/LOJA/MOYU-Maglev-Magnetic-Magic-Cubo-de-Velocidade-Stickerless-Profissional-RS3-M-RS3-M-3X3-Presentes-Infantis.jpg_80x80.jpg_.webp" alt=""></a>
+    <hr color="">
+    <audio id="musicaDeFundo" controls autoplay style="display: none;" src="AUDIOS/Late Truth [TubeRipper.com].m4a"></audio>
+    <script>
+        var audio = document.getElementById("musicaDeFundo");
 
+        function toggleAudio() {
+            if (audio.paused){
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
 </body>
 </html>
